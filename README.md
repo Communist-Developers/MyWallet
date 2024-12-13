@@ -1,2 +1,2 @@
-# MyWallet
- a public wallet calculator..
+# myTrainingWallet
+ this repository is for training with classmates
