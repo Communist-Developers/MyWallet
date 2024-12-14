@@ -17,15 +17,16 @@ let addingBtn = document.querySelector('.addingBtn')
 let list = document.querySelector('.list-group')
 
 
-
 let incomeNum
-incomeNum = Number(prompt('Gimme Some Cash u Lil Ni**a'))
+do {
+    incomeNum = Number(prompt('Gimme Some Cash u Lil Ni**a'))
+    
+} while (isNaN(incomeNum) || incomeNum <= 0);
 
 
 let totalEntry = incomeNum
 total.innerHTML = incomeNum
 left.innerHTML = totalEntry
-
 
 
 addingBtn.addEventListener('click' , function(e) {
@@ -45,14 +46,15 @@ addingBtn.addEventListener('click' , function(e) {
     }
 })
 
-
 function jigar() {
     totalEntry -= amount.value
     left.innerHTML = totalEntry
     // console.log(amount.value);
 }
+
 function addToList(expense, amount) {
-    list.innerHTML += `<li>${expense}:  ==> $${amount}</li>`
+    list.innerHTML += `<li>${expense}  ==> ${amount} تومان</li>`
+
 }
 
 
@@ -67,10 +69,7 @@ function addToList(expense, amount) {
 // better way for while... i gotta find out how this works.. isNaN(incomeNum) || incomeNum <= 0
 
 
-// do {
-//     incomeNum = Number(prompt('Gimme Some Cash u Lil Ni**a'))
-    
-// } while (isNaN(incomeNum) || incomeNum <= 0);
+
 
 
 
