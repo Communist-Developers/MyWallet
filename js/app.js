@@ -17,14 +17,9 @@ let addingBtn = document.querySelector('.addingBtn')
 let list = document.querySelector('.list-group')
 
 
+
+let incomeNum
 incomeNum = Number(prompt('Gimme Some Cash u Lil Ni**a'))
-
-// let incomeNum
-// do {
-//     incomeNum = Number(prompt('Gimme Some Cash u Lil Ni**a'))
-    
-// } while (isNaN(incomeNum) || incomeNum <= 0);
-
 
 
 let totalEntry = incomeNum
@@ -40,10 +35,10 @@ addingBtn.addEventListener('click' , function(e) {
         alert('Empty Inputs. \n (mke sure to enter only numbers in cost section)')
     } else {
         let expense = expenseInput.value
-        let amount = parseFloat(amountInput.value)
+        let amount = Number(amountInput.value)
 
-            console.log('ONly Number'); 
-            math()
+            console.log('Only Number'); 
+            jigar()
             addToList(expense, amount)
             expenseInput.value = ''
             amountInput.value = ''               
@@ -51,13 +46,11 @@ addingBtn.addEventListener('click' , function(e) {
 })
 
 
-function math() {
+function jigar() {
     totalEntry -= amount.value
     left.innerHTML = totalEntry
     // console.log(amount.value);
 }
-
-
 function addToList(expense, amount) {
     list.innerHTML += `<li>${expense}:  ==> $${amount}</li>`
 }
@@ -74,9 +67,10 @@ function addToList(expense, amount) {
 // better way for while... i gotta find out how this works.. isNaN(incomeNum) || incomeNum <= 0
 
 
-
-
-
+// do {
+//     incomeNum = Number(prompt('Gimme Some Cash u Lil Ni**a'))
+    
+// } while (isNaN(incomeNum) || incomeNum <= 0);
 
 
 
