@@ -17,13 +17,13 @@ let addingBtn = document.querySelector('.addingBtn')
 let list = document.querySelector('.list-group')
 
 
+incomeNum = Number(prompt('Gimme Some Cash u Lil Ni**a'))
 
-
-let incomeNum
-do {
-    incomeNum = Number(prompt('Gimme Some Cash u Lil Ni**a'))
+// let incomeNum
+// do {
+//     incomeNum = Number(prompt('Gimme Some Cash u Lil Ni**a'))
     
-} while (isNaN(incomeNum) || incomeNum <= 0);
+// } while (isNaN(incomeNum) || incomeNum <= 0);
 
 
 
@@ -71,7 +71,7 @@ function addToList(expense, amount) {
 
 
 
-
+// better way for while... i gotta find out how this works.. isNaN(incomeNum) || incomeNum <= 0
 
 
 
