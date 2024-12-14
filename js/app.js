@@ -53,7 +53,7 @@ function jigar() {
 }
 
 function addToList(expense, amount) {
-    list.innerHTML += `<li>${expense}  ==> ${amount} تومان</li>`
+    list.innerHTML += `<li class="meowList">${expense}   ==> ${amount}T </li>`
 
 }
 
