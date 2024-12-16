@@ -50,10 +50,8 @@ addingBtn.addEventListener('click' , function(e) {
 function mathematics() {
     totalEntry -= amount.value
     left.innerHTML = totalEntry
-    // console.log(amount.value);
 }
 
 function addToList(expense, amount) {
     list.innerHTML += `<li class="meowList">${expense}   ==> ${amount}T </li>`
-
 }
